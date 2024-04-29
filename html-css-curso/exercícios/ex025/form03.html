@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get"></form>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="2" maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+    </form>
 </body>
 </html>
