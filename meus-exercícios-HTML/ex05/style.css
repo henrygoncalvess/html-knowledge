@@ -30,12 +30,41 @@ p.autor{
 }
 p{
     font: var(--normal);
-    font-size: max(0.8em, 3.2vw);
+    font-size: max(0.8em, 3.6vw);
+    line-height: 1.9em;
+}
+.fundo{
+    background-color: rgba(0, 0, 0, 0.414);
+    padding: 6px 8px;
+    width: max-content;
 }
 aside{
     background-color: white;
-    padding: 10vh 0 10vh 30px;
+    padding: 10vh 0 13vh 30px;
 }
-img{
-    width: 100%;
+.joana{
+    background: black url(imagens/background001.jpg) center right no-repeat fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.51);
+}
+.livro{
+    background: black url(imagens/background002.jpg) bottom left no-repeat fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.51);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font: normal lighter 1em Arial, Helvetica, sans-serif;
+    padding: 1vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
 }
