@@ -8,13 +8,25 @@
 <body>
     <h1>Exemplo de Form</h1>
     <form action="cadatro.js" method="get" autocomplete="on">
+        <fieldset style="background-color: rgb(191, 222, 232);">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="2" maxlength="30" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="exemplo@gmail.com">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4}-[0-9]{4}$" placeholder="(XX) 0000-0000">
+            </p>
+        </fieldset>
+        <!-- ESTUDAR RegEx -->
         <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" minlength="2" maxlength="30" required>
-        </p>
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="exemplo@gmail.com">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
