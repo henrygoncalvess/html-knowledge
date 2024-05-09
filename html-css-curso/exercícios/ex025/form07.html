@@ -7,8 +7,43 @@
 </head>
 <body>
     <h1>Exemplo de Formulários</h1>
-    <form action="cadastro.js" method="get">
-        
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>Escolha</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Adiministrador</option>
+                <option>Programador</option>
+                <option>Cozinheiro</option>
+                <option>Desenvolvedor</option>
+                <option>Desempregado</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="35" rows="6" placeholder="Sua mensagem aqui, agora o placeholder fununcia"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
