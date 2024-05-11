@@ -14,15 +14,28 @@ h1{
     text-align: center;
     padding: 10px;
 }
-nav{display: none;}
+nav:not(:active){
+    display: none;
+}
+@keyframes vivo {
+    0%{
+        padding: 0px;
+    }
+    100%{
+        padding: 7px;
+    }
+}
 a{
     text-decoration: none;
     color: white;
     background-color: rgb(74, 74, 74);
     text-align: center;
     border-top: 1px solid gray;
-    padding: 5px;
+    padding: 7px;
     display: block;
+    animation: vivo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 nav a:hover{
     background-color: gray;
