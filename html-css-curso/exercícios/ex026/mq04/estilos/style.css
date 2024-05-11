@@ -1,16 +1,44 @@
 @charset "UTF-8";
 
-/* TODAS AS DEMAIS MEDIAS */
+/* VERSÃO MOBILE FIRST */
 
-/* TYPICAL DEVICE BREACKPOINT 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.806);
+    font-size: 2em;
+}
 
-Mobile: 360 x 640
-Mobile: 375 x 667
-Mobile: 360 x 720
-iPhone X: 375 x 812
-Pixel 2: 411 x 731
-Tablet: 768 x 1024
-Laptop: 1366 x 768
-High-res laptop or desktop: 1920 x 1080
+img{
+    display: block;
+    margin: auto;
+}
 
-*/
+#phone{display: block;}
+#tablet{display: none;}
+#print{display: none;}
+#pc{display: none;}
+#tv{display: none;}
