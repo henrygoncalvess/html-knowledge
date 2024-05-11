@@ -19,10 +19,13 @@ nav:not(:active){
 }
 @keyframes vivo {
     0%{
-        padding: 0px;
+        color: black;
+        background-color: white;
+        padding: 0%;
     }
-    100%{
-        padding: 7px;
+    25%{
+        color: black;
+        background-color: white;
     }
 }
 a{
