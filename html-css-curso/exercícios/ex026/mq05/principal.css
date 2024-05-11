@@ -14,27 +14,38 @@ h1{
     text-align: center;
     padding: 10px;
 }
+nav{display: none;}
 a{
     text-decoration: none;
     color: white;
     background-color: rgb(74, 74, 74);
     text-align: center;
-    margin: 1px 0px;
+    border-top: 1px solid gray;
     padding: 5px;
     display: block;
-    display: none;
 }
-.menu{
+nav a:hover{
+    background-color: gray;
+}
+#menu{
     display: block;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+}
+#menu:hover{
     background-color: white;
     color: black;
-    font-size: 2em;
-}
-nav:active:not(:focus-within) > a{
-    display: block;
 }
 main{
     margin: 10px;
+}
+h2{
+    text-align: center;
 }
 article{
     background-color: white;
