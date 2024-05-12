@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5F2C82;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section{
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    top: 50%;
+    left: 50%;
+    
+    background-color: white;
+    width: 250px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.639);
+
+    transform: translate(-50%, -50%);
+    transition: 300ms;
+    transition-timing-function: ease;
+}
+#imagem{
+    display: block;
+    background: #5F2C82 url(../pexels-mohan-reddy-1263154-4388593.jpg) center center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+#form{
+    display: block;
+    padding: 10px;
+    line-height: 1.2em;
+}
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.6em;
+}
+form{
+    text-align: right;
+}
+#registro{
+    background-color: #5F2C82;
+    border-radius: 5px;
+    margin: 5px 0px;
+    color: white;
+    font-size: 1.8em;
+}
+input:focus-within{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 10px;
+}
+.campo{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    background-color: #5F2C82;
+    border: 2px solid #5F2C82;
+}
+.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > label{
+    display: none;
+}
+input{
+    background-color: #51b0ad;
+    border: none;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(100% - 44px);
+    transform: translateY(-7px);
+}
+.entrar{
+    margin-top: 12px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    display: block;
+    color: white;
+    background-color: #51b0ad;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.entrar:hover{
+    background-color: #2c706e;
+}
+.forgot{
+    font-size: 1.2em;
+    margin: 3px 0px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    border: 1px solid #327c7a;
+    color: #2c706e;
+}
+.forgot:hover{
+    background-color: #51b0ad;
+}
+.forgot > span{
+    font-size: 1em;
+}
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 900, 'GRAD' 900, 'opsz' 48
+}
