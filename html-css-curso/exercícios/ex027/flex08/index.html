@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .conteiner{
+            background-color: rgb(144, 144, 144);
+            
+            display: flex;
+            flex-grow: row wrap;
+
+            height: 400px;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .item{
+            flex: auto;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            margin: 0px 10px;
+        }
+        div{
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        #i1{
+            align-self: auto;
+        }
+        #i2{
+            align-self: flex-start;
+        }
+        #i3{
+            align-self: flex-end;
+        }
+        #i4{
+            align-self: center;
+        }
+        #i5{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">auto</div>
+        <div class="item" id="i2">flex-start</div>
+        <div class="item" id="i3">flex-end</div>
+        <div class="item" id="i4">center</div>
+        <div class="item" id="i5">stretch</div>
+    </div>
+</body>
+</html>
