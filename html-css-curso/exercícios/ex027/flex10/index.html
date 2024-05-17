@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner{
+            background-color: rgb(144, 144, 144);
+            
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        .item2{
+            background-color: lightblue;
+            flex-basis: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ad numquam? Nisi magni consequatur nulla dolores impedit minus, ipsum ab praesentium provident corporis enim, dolorem illum libero eaque. Doloribus, nobis!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolore hic, tenetur alias, eaque culpa porro natus voluptas quaerat iusto modi tempore nihil? Quis natus soluta dolore recusandae maiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod ex ea dicta quo ipsa rerum aspernatur dolore similique magni. Voluptate, non. Beatae, dolor aliquid iste voluptas et ipsum adipisci.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi tempora at est ipsa sit facilis iusto amet delectus veniam, obcaecati fugit illo perferendis libero voluptates ullam nulla? Fuga, dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis saepe nam deserunt voluptas, facilis odit reiciendis at ratione dolorum nesciunt, minima dolore suscipit perspiciatis aliquam, officiis sint mollitia sunt necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, saepe adipisci. Mollitia magnam tempora explicabo quos ullam, repellendus dicta amet sit perspiciatis. Eius expedita atque exercitationem! Ab unde vitae dolor.</div>
+    </div> <br>
+    <p>FLEX-GROW</p>
+    <section class="conteiner">
+        <div class="item2" style="flex-grow: 0;">0</div>
+        <div class="item2" style="flex-grow: 1;">1</div>
+        <div class="item2" style="flex-grow: 0;">0</div>
+    </section> <br>
+    <section class="conteiner">
+        <div class="item2" style="flex-grow: 0;">0</div>
+        <div class="item2" style="flex-grow: 1;">1</div>
+        <div class="item2" style="flex-grow: 2;">2</div>
+    </section>
+    <p>FLEX-SHRINK</p>
+    <section class="conteiner">
+        <div class="item2" style="flex-shrink: 2;">2</div>
+        <div class="item2" style="flex-shrink: 0;">0</div>
+        <div class="item2" style="flex-shrink: 1;">1</div>
+    </section>
+</body>
+</html>
