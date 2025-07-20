@@ -1,0 +1,41 @@
+.c-1,
+.c-2 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.i-2 {
+    flex: auto;
+}
+
+.c-3,
+.c-4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.i-4 {
+    flex: auto;
+}
+
+.c-5,
+.c-6 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 210px;
+}
+
+.i-6 {
+    flex: auto;
+}
+
+.c-7,
+.c-8 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.i-8 {
+    flex: auto;
+}
