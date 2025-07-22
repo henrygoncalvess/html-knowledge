@@ -8,548 +8,551 @@
         <title>flexbox</title>
     </head>
     <body>
-        <header>
-            <div class="header-example">
-                <p>FLEX CONTAINER</p>
-                <div class="description-items">FLEX ITEMS</div>
-                <div class="description-items">FLEX ITEMS</div>
-                <div class="description-items">FLEX ITEMS</div>
-                <div class="description-items">FLEX ITEMS</div>
-                <div class="description-items">FLEX ITEMS</div>
-                <div class="description-items">FLEX ITEMS</div>
-            </div>
-            <div class="description-text">
-                <b>wrap</b> | wrap items relative to the <b>cross</b> axis
-                <br />
-                <b>justify-content</b> | align items relative to the
-                <b>main</b> axis
-                <br />
-                <b>align-items</b> | align items relative to the
-                <b>cross</b> axis
-                <br />
-                <b>align-content</b> | align items relative to the
-                <b>cross</b> axis
-                <b>when items wrap</b>
-            </div>
-        </header>
-
-        <section>
-            <h3 class="section-1">1 row</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&rarr;</b> cross axis:
-                    <b class="axis-arrow">&darr;</b>
-                </div>
-                <div class="description-text">flex direction: <b>row</b></div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <br />
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <div class="container c-1">
-                    <div class="items i-1">A EXAMPLE ITEM</div>
-                    <div class="items i-1">B EXAMPLE ITEM</div>
-                    <div class="items i-1">C EXAMPLE ITEM</div>
-                    <div class="items i-1">D EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">flex: <b>auto</b></div>
-                <div class="container c-2">
-                    <div class="items i-2">A EXAMPLE ITEM</div>
-                    <div class="items i-2">B EXAMPLE ITEM</div>
-                    <div class="items i-2">C EXAMPLE ITEM</div>
-                </div>
-            </div>
-            <h3>2 row</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&rarr;</b> cross axis:
-                    <b class="axis-arrow">&darr;</b>
-                </div>
-                <div class="description-text">flex direction: <b>row</b></div>
-                <div class="description-text">flex wrap: <b>wrap</b></div>
-                <br />
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <div class="container c-3">
-                    <div class="items i-3">A EXAMPLE ITEM</div>
-                    <div class="items i-3">B EXAMPLE ITEM</div>
-                    <div class="items i-3">C EXAMPLE ITEM</div>
-                    <div class="items i-3">D EXAMPLE ITEM</div>
-                    <div class="items i-3">E EXAMPLE ITEM</div>
-                    <div class="items i-3">F EXAMPLE ITEM</div>
-                    <div class="items i-3">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">flex: <b>auto</b></div>
-                <div class="container c-4">
-                    <div class="items i-4">A EXAMPLE ITEM</div>
-                    <div class="items i-4">B EXAMPLE ITEM</div>
-                    <div class="items i-4">C EXAMPLE ITEM</div>
-                    <div class="items i-4">D EXAMPLE ITEM</div>
-                    <div class="items i-4">E EXAMPLE ITEM</div>
-                    <div class="items i-4">F EXAMPLE ITEM</div>
-                    <div class="items i-4">G EXAMPLE ITEM</div>
-                </div>
-            </div>
-            <h3>3 row</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&rarr;</b> cross axis:
-                    <b class="axis-arrow">&darr;</b>
-                </div>
-                <div class="description-text">flex direction: <b>row</b></div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">justify-content: <b>end</b></div>
-                <div class="container c-5">
-                    <div class="items i-5">A EXAMPLE ITEM</div>
-                    <div class="items i-5">B EXAMPLE ITEM</div>
-                    <div class="items i-5">C EXAMPLE ITEM</div>
+        <div class="main-container">
+            <header>
+                <div class="header-example">
+                    <p>FLEX CONTAINER</p>
+                    <div class="description-items">FLEX ITEMS</div>
+                    <div class="description-items">FLEX ITEMS</div>
+                    <div class="description-items">FLEX ITEMS</div>
+                    <div class="description-items">FLEX ITEMS</div>
+                    <div class="description-items">FLEX ITEMS</div>
+                    <div class="description-items">FLEX ITEMS</div>
                 </div>
                 <div class="description-text">
-                    justify-content: <b>center</b>
+                    <b>wrap</b> | wrap items relative to the <b>cross</b> axis
+                    <br />
+                    <b>justify-content</b> | align items relative to the
+                    <b>main</b> axis
+                    <br />
+                    <b>align-items</b> | align items relative to the
+                    <b>cross</b> axis
+                    <br />
+                    <b>align-content</b> | align items relative to the
+                    <b>cross</b> axis
+                    <b>when items wrap</b>
                 </div>
-                <div class="container c-6">
-                    <div class="items i-6">A EXAMPLE ITEM</div>
-                    <div class="items i-6">B EXAMPLE ITEM</div>
-                    <div class="items i-6">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-between</b>
-                </div>
-                <div class="container c-7">
-                    <div class="items i-7">A EXAMPLE ITEM</div>
-                    <div class="items i-7">B</div>
-                    <div class="items i-7">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-evenly</b>
-                </div>
-                <div class="container c-8">
-                    <div class="items i-8">A ITEM</div>
-                    <div class="items i-8">B ITEM</div>
-                    <div class="items i-8">C ITEM</div>
-                    <div class="items i-8">D ITEM</div>
-                    <div class="items i-8">E ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-around</b>
-                </div>
-                <div class="container c-9">
-                    <div class="justify-space-around">
-                        <div class="items i-9">A ITEM</div>
+            </header>
+            <section>
+                <h3 class="section-1">1 row</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&rarr;</b> cross axis:
+                        <b class="axis-arrow">&darr;</b>
                     </div>
-                    <div class="justify-space-around">
-                        <div class="items i-9">B ITEM</div>
+                    <div class="description-text">
+                        flex direction: <b>row</b>
                     </div>
-                    <div class="justify-space-around">
-                        <div class="items i-9">C ITEM</div>
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <br />
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
                     </div>
-                    <div class="justify-space-around">
-                        <div class="items i-9">D ITEM</div>
+                    <div class="container c-1">
+                        <div class="items i-1">A EXAMPLE ITEM</div>
+                        <div class="items i-1">B EXAMPLE ITEM</div>
+                        <div class="items i-1">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">flex: <b>auto</b></div>
+                    <div class="container c-2">
+                        <div class="items i-2">A EXAMPLE ITEM</div>
+                        <div class="items i-2">B EXAMPLE ITEM</div>
+                        <div class="items i-2">C EXAMPLE ITEM</div>
                     </div>
                 </div>
-            </div>
-
-            <h3>4 row</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&rarr;</b> cross axis:
-                    <b class="axis-arrow">&darr;</b>
-                </div>
-                <div class="description-text">flex direction: <b>row</b></div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">
-                    align-items: <b>stretch (default)</b>
-                </div>
-                <div class="container c-10">
-                    <div class="items i-10">A EXAMPLE ITEM</div>
-                    <div class="items i-10">B EXAMPLE ITEM</div>
-                    <div class="items i-10">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>center</b></div>
-                <div class="container c-11">
-                    <div class="items i-11">A EXAMPLE ITEM</div>
-                    <div class="items i-11">B EXAMPLE ITEM</div>
-                    <div class="items i-11">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>start</b></div>
-                <div class="container c-12">
-                    <div class="items i-12">A EXAMPLE ITEM</div>
-                    <div class="items i-12">B EXAMPLE ITEM</div>
-                    <div class="items i-12">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>end</b></div>
-                <div class="container c-13">
-                    <div class="items i-13">A EXAMPLE ITEM</div>
-                    <div class="items i-13">B EXAMPLE ITEM</div>
-                    <div class="items i-13">C EXAMPLE ITEM</div>
-                    <div class="items i-13">D EXAMPLE ITEM</div>
-                </div>
-            </div>
-            <h3>5 row</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&rarr;</b> cross axis:
-                    <b class="axis-arrow">&darr;</b>
-                </div>
-                <div class="description-text">flex direction: <b>row</b></div>
-                <div class="description-text">flex wrap: <b>wrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">
-                    align-content: <b>stretch (default)</b> <br /><br />
-                    1. calculate the available area <br />
-                    2. divide by the number of lines <br />
-                    3. stretch the items
-                </div>
-                <div class="container c-14">
-                    <div class="items i-14">A EXAMPLE ITEM</div>
-                    <div class="items i-14">B EXAMPLE ITEM</div>
-                    <div class="items i-14">C EXAMPLE ITEM</div>
-                    <div class="items i-14">D EXAMPLE ITEM</div>
-                    <div class="items i-14">E EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>start</b></div>
-                <div class="container c-15">
-                    <div class="items i-15">A EXAMPLE ITEM</div>
-                    <div class="items i-15">B EXAMPLE ITEM</div>
-                    <div class="items i-15">C EXAMPLE ITEM</div>
-                    <div class="items i-15">D EXAMPLE ITEM</div>
-                    <div class="items i-15">E EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>end</b></div>
-                <div class="container c-16">
-                    <div class="items i-16">A EXAMPLE ITEM</div>
-                    <div class="items i-16">B EXAMPLE ITEM</div>
-                    <div class="items i-16">C EXAMPLE ITEM</div>
-                    <div class="items i-16">D EXAMPLE ITEM</div>
-                    <div class="items i-16">E EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>center</b></div>
-                <div class="container c-17">
-                    <div class="items i-17">A EXAMPLE ITEM</div>
-                    <div class="items i-17">B EXAMPLE ITEM</div>
-                    <div class="items i-17">C EXAMPLE ITEM</div>
-                    <div class="items i-17">D EXAMPLE ITEM</div>
-                    <div class="items i-17">E EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-between</b>
-                </div>
-                <div class="container c-18">
-                    <div class="items i-18">A EXAMPLE ITEM</div>
-                    <div class="items i-18">B</div>
-                    <div class="items i-18">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-evenly</b>
-                </div>
-                <div class="container c-19">
-                    <div class="items i-19">A ITEM</div>
-                    <div class="items i-19">B ITEM</div>
-                    <div class="items i-19">C ITEM</div>
-                    <div class="items i-19">D ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-around</b>
-                </div>
-                <div class="container c-20">
-                    <div class="align-space-around">
-                        <div class="items i-20">A ITEM</div>
+                <h3>2 row</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&rarr;</b> cross axis:
+                        <b class="axis-arrow">&darr;</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-20">B ITEM</div>
+                    <div class="description-text">
+                        flex direction: <b>row</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-20">C ITEM</div>
+                    <div class="description-text">flex wrap: <b>wrap</b></div>
+                    <br />
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-20">D ITEM</div>
+                    <div class="container c-3">
+                        <div class="items i-3">A EXAMPLE ITEM</div>
+                        <div class="items i-3">B EXAMPLE ITEM</div>
+                        <div class="items i-3">C EXAMPLE ITEM</div>
+                        <div class="items i-3">D EXAMPLE ITEM</div>
+                        <div class="items i-3">E EXAMPLE ITEM</div>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-20">D ITEM</div>
+                    <div class="description-text">flex: <b>auto</b></div>
+                    <div class="container c-4">
+                        <div class="items i-4">A EXAMPLE ITEM</div>
+                        <div class="items i-4">B EXAMPLE ITEM</div>
+                        <div class="items i-4">C EXAMPLE ITEM</div>
+                        <div class="items i-4">D EXAMPLE ITEM</div>
+                        <div class="items i-4">E EXAMPLE ITEM</div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <h3 class="section-2">1 column</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&darr;</b> cross axis:
-                    <b class="axis-arrow">&rarr;</b>
-                </div>
-                <div class="description-text">
-                    flex direction: <b>column</b>
-                </div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <br />
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <div class="container c-21">
-                    <div class="items i-21">A EXAMPLE ITEM FIXED WIDTH</div>
-                    <div class="items i-21">B EXAMPLE ITEM FIXED WIDTH</div>
-                    <div class="items i-21">C EXAMPLE ITEM FIXED WIDTH</div>
-                </div>
-                <div class="description-text">flex: <b>auto</b></div>
-                <div class="container c-22">
-                    <div class="items i-22">
-                        A EXAMPLE ITEM WIDTH NOT DEFINED
+                <h3>3 row</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&rarr;</b> cross axis:
+                        <b class="axis-arrow">&darr;</b>
                     </div>
-                    <div class="items i-22">
-                        B EXAMPLE ITEM WIDTH NOT DEFINED
+                    <div class="description-text">
+                        flex direction: <b>row</b>
                     </div>
-                    <div class="items i-22">
-                        C EXAMPLE ITEM WIDTH NOT DEFINED
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
                     </div>
-                </div>
-            </div>
-
-            <h3>2 column</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&darr;</b> cross axis:
-                    <b class="axis-arrow">&rarr;</b>
-                </div>
-                <div class="description-text">
-                    flex direction: <b>column</b>
-                </div>
-                <div class="description-text">flex wrap: <b>wrap</b></div>
-                <br />
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <div class="container c-23">
-                    <div class="items i-23">A FIXED WIDTH</div>
-                    <div class="items i-23">B FIXED WIDTH</div>
-                    <div class="items i-23">C FIXED WIDTH</div>
-                    <div class="items i-23">D FIXED WIDTH</div>
-                    <div class="items i-23">E FIXED WIDTH</div>
-                </div>
-                <div class="description-text">flex: <b>auto</b></div>
-                <div class="container c-24">
-                    <div class="items i-24">A EXAMPLE ITEM</div>
-                    <div class="items i-24">B EXAMPLE ITEM</div>
-                    <div class="items i-24">C EXAMPLE ITEM</div>
-                    <div class="items i-24">D EXAMPLE ITEM</div>
-                    <div class="items i-24">E EXAMPLE ITEM</div>
-                </div>
-            </div>
-
-            <h3>3 column</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&darr;</b> cross axis:
-                    <b class="axis-arrow">&rarr;</b>
-                </div>
-                <div class="description-text">
-                    flex direction: <b>column</b>
-                </div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">justify-content: <b>end</b></div>
-                <div class="container c-25">
-                    <div class="items i-25">A EXAMPLE ITEM</div>
-                    <div class="items i-25">B EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>center</b>
-                </div>
-                <div class="container c-26">
-                    <div class="items i-26">A EXAMPLE ITEM</div>
-                    <div class="items i-26">B EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-between</b>
-                </div>
-                <div class="container c-27">
-                    <div class="items i-27">A EXAMPLE ITEM</div>
-                    <div class="items i-27">B EXAMPLE ITEM</div>
-                    <div class="items i-27">C EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-evenly</b>
-                </div>
-                <div class="container c-28">
-                    <div class="items i-28">A ITEM</div>
-                    <div class="items i-28">B ITEM</div>
-                </div>
-                <div class="description-text">
-                    justify-content: <b>space-around</b>
-                </div>
-                <div class="container c-29">
-                    <div class="justify-space-around">
-                        <div class="items i-29">A ITEM</div>
+                    <br />
+                    <div class="description-text">
+                        justify-content: <b>end</b>
                     </div>
-                    <div class="justify-space-around">
-                        <div class="items i-29">B ITEM</div>
+                    <div class="container c-5">
+                        <div class="items i-5">A EXAMPLE</div>
+                        <div class="items i-5">B EXAMPLE</div>
+                        <div class="items i-5">C EXAMPLE</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>center</b>
+                    </div>
+                    <div class="container c-6">
+                        <div class="items i-6">A EXAMPLE</div>
+                        <div class="items i-6">B EXAMPLE</div>
+                        <div class="items i-6">C EXAMPLE</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-between</b>
+                    </div>
+                    <div class="container c-7">
+                        <div class="items i-7">A EXAMPLE ITEM</div>
+                        <div class="items i-7">B</div>
+                        <div class="items i-7">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-evenly</b>
+                    </div>
+                    <div class="container c-8">
+                        <div class="items i-8">A ITEM</div>
+                        <div class="items i-8">B ITEM</div>
+                        <div class="items i-8">C ITEM</div>
+                        <div class="items i-8">D ITEM</div>
+                        <div class="items i-8">E ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-around</b>
+                    </div>
+                    <div class="container c-9">
+                        <div class="justify-space-around">
+                            <div class="items i-9">A ITEM</div>
+                        </div>
+                        <div class="justify-space-around">
+                            <div class="items i-9">B ITEM</div>
+                        </div>
+                        <div class="justify-space-around">
+                            <div class="items i-9">C ITEM</div>
+                        </div>
+                        <div class="justify-space-around">
+                            <div class="items i-9">D ITEM</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <h3>4 column</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&darr;</b> cross axis:
-                    <b class="axis-arrow">&rarr;</b>
-                </div>
-                <div class="description-text">
-                    flex direction: <b>column</b>
-                </div>
-                <div class="description-text">flex wrap: <b>nowrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">
-                    align-items: <b>stretch (default)</b>
-                </div>
-                <div class="container c-30">
-                    <div class="items i-30">A EXAMPLE ITEM</div>
-                    <div class="items i-30">B EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>center</b></div>
-                <div class="container c-31">
-                    <div class="items i-31">A EXAMPLE ITEM</div>
-                    <div class="items i-31">B EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>start</b></div>
-                <div class="container c-32">
-                    <div class="items i-32">A EXAMPLE ITEM</div>
-                    <div class="items i-32">B EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-items: <b>end</b></div>
-                <div class="container c-33">
-                    <div class="items i-33">A EXAMPLE ITEM</div>
-                    <div class="items i-33">B EXAMPLE ITEM</div>
-                </div>
-            </div>
-
-            <h3>5 column</h3>
-            <div class="example">
-                <div class="axis">
-                    main axis: <b class="axis-arrow">&darr;</b> cross axis:
-                    <b class="axis-arrow">&rarr;</b>
-                </div>
-                <div class="description-text">
-                    flex direction: <b>column</b>
-                </div>
-                <div class="description-text">flex wrap: <b>wrap</b></div>
-                <div class="description-text">
-                    flex: <b>0 1 auto (default)</b>
-                </div>
-                <br />
-                <div class="description-text">
-                    align-content: <b>stretch (default)</b> <br /><br />
-                    1. calculate the available area <br />
-                    2. divide by the number of lines <br />
-                    3. stretch the items
-                </div>
-                <div class="container c-34">
-                    <div class="items i-34">A EXAMPLE ITEM</div>
-                    <div class="items i-34">B EXAMPLE ITEM</div>
-                    <div class="items i-34">C EXAMPLE ITEM</div>
-                    <div class="items i-34">D EXAMPLE ITEM</div>
-                    <div class="items i-34">E EXAMPLE ITEM</div>
-                    <div class="items i-34">F EXAMPLE ITEM</div>
-                    <div class="items i-34">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>start</b></div>
-                <div class="container c-35">
-                    <div class="items i-35">A EXAMPLE ITEM</div>
-                    <div class="items i-35">B EXAMPLE ITEM</div>
-                    <div class="items i-35">C EXAMPLE ITEM</div>
-                    <div class="items i-35">D EXAMPLE ITEM</div>
-                    <div class="items i-35">E EXAMPLE ITEM</div>
-                    <div class="items i-35">F EXAMPLE ITEM</div>
-                    <div class="items i-35">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>end</b></div>
-                <div class="container c-36">
-                    <div class="items i-36">A EXAMPLE ITEM</div>
-                    <div class="items i-36">B EXAMPLE ITEM</div>
-                    <div class="items i-36">C EXAMPLE ITEM</div>
-                    <div class="items i-36">D EXAMPLE ITEM</div>
-                    <div class="items i-36">E EXAMPLE ITEM</div>
-                    <div class="items i-36">F EXAMPLE ITEM</div>
-                    <div class="items i-36">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">align-content: <b>center</b></div>
-                <div class="container c-37">
-                    <div class="items i-37">A EXAMPLE ITEM</div>
-                    <div class="items i-37">B EXAMPLE ITEM</div>
-                    <div class="items i-37">C EXAMPLE ITEM</div>
-                    <div class="items i-37">D EXAMPLE ITEM</div>
-                    <div class="items i-37">E EXAMPLE ITEM</div>
-                    <div class="items i-37">F EXAMPLE ITEM</div>
-                    <div class="items i-37">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-between</b>
-                </div>
-                <div class="container c-38">
-                    <div class="items i-38">A EXAMPLE ITEM</div>
-                    <div class="items i-38">B EXAMPLE ITEM</div>
-                    <div class="items i-38">C EXAMPLE ITEM</div>
-                    <div class="items i-38">D EXAMPLE ITEM</div>
-                    <div class="items i-38">E EXAMPLE ITEM</div>
-                    <div class="items i-38">F EXAMPLE ITEM</div>
-                    <div class="items i-38">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-evenly</b>
-                </div>
-                <div class="container c-39">
-                    <div class="items i-39">A EXAMPLE ITEM</div>
-                    <div class="items i-39">B EXAMPLE ITEM</div>
-                    <div class="items i-39">C EXAMPLE ITEM</div>
-                    <div class="items i-39">D EXAMPLE ITEM</div>
-                    <div class="items i-39">E EXAMPLE ITEM</div>
-                    <div class="items i-39">F EXAMPLE ITEM</div>
-                    <div class="items i-39">G EXAMPLE ITEM</div>
-                </div>
-                <div class="description-text">
-                    align-content: <b>space-around</b>
-                </div>
-                <div class="container c-40">
-                    <div class="align-space-around">
-                        <div class="items i-40">A EXAMPLE ITEM</div>
+                <h3>4 row</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&rarr;</b> cross axis:
+                        <b class="axis-arrow">&darr;</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">B EXAMPLE ITEM</div>
+                    <div class="description-text">
+                        flex direction: <b>row</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">C EXAMPLE ITEM</div>
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">D EXAMPLE ITEM</div>
+                    <br />
+                    <div class="description-text">
+                        align-items: <b>stretch (default)</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">E EXAMPLE ITEM</div>
+                    <div class="container c-10">
+                        <div class="items i-10">A EXAMPLE ITEM</div>
+                        <div class="items i-10">B EXAMPLE ITEM</div>
+                        <div class="items i-10">C EXAMPLE ITEM</div>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">F EXAMPLE ITEM</div>
+                    <div class="description-text">
+                        align-items: <b>center</b>
                     </div>
-                    <div class="align-space-around">
-                        <div class="items i-40">G EXAMPLE ITEM</div>
+                    <div class="container c-11">
+                        <div class="items i-11">A EXAMPLE ITEM</div>
+                        <div class="items i-11">B EXAMPLE ITEM</div>
+                        <div class="items i-11">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-items: <b>start</b>
+                    </div>
+                    <div class="container c-12">
+                        <div class="items i-12">A EXAMPLE ITEM</div>
+                        <div class="items i-12">B EXAMPLE ITEM</div>
+                        <div class="items i-12">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">align-items: <b>end</b></div>
+                    <div class="container c-13">
+                        <div class="items i-13">A EXAMPLE ITEM</div>
+                        <div class="items i-13">B EXAMPLE ITEM</div>
+                        <div class="items i-13">C EXAMPLE ITEM</div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <h3>5 row</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&rarr;</b> cross axis:
+                        <b class="axis-arrow">&darr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>row</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>wrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <br />
+                    <div class="description-text">
+                        align-content: <b>stretch (default)</b> <br /><br />
+                        1. calculate the available area <br />
+                        2. divide by the number of lines <br />
+                        3. stretch the items
+                    </div>
+                    <div class="container c-14">
+                        <div class="items i-14">A EXAMPLE ITEM</div>
+                        <div class="items i-14">B EXAMPLE ITEM</div>
+                        <div class="items i-14">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>start</b>
+                    </div>
+                    <div class="container c-15">
+                        <div class="items i-15">A EXAMPLE ITEM</div>
+                        <div class="items i-15">B EXAMPLE ITEM</div>
+                        <div class="items i-15">C EXAMPLE ITEM</div>
+                        <div class="items i-15">D EXAMPLE ITEM</div>
+                        <div class="items i-15">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>end</b>
+                    </div>
+                    <div class="container c-16">
+                        <div class="items i-16">A EXAMPLE ITEM</div>
+                        <div class="items i-16">B EXAMPLE ITEM</div>
+                        <div class="items i-16">C EXAMPLE ITEM</div>
+                        <div class="items i-16">D EXAMPLE ITEM</div>
+                        <div class="items i-16">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>center</b>
+                    </div>
+                    <div class="container c-17">
+                        <div class="items i-17">A EXAMPLE ITEM</div>
+                        <div class="items i-17">B EXAMPLE ITEM</div>
+                        <div class="items i-17">C EXAMPLE ITEM</div>
+                        <div class="items i-17">D EXAMPLE ITEM</div>
+                        <div class="items i-17">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-between</b>
+                    </div>
+                    <div class="container c-18">
+                        <div class="items i-18">A EXAMPLE ITEM</div>
+                        <div class="items i-18">B EXAMPLE ITEM</div>
+                        <div class="items i-18">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-evenly</b>
+                    </div>
+                    <div class="container c-19">
+                        <div class="items i-19">A ITEM</div>
+                        <div class="items i-19">B ITEM</div>
+                        <div class="items i-19">C ITEM</div>
+                        <div class="items i-19">D ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-around</b>
+                    </div>
+                    <div class="container c-20">
+                        <div class="align-space-around">
+                            <div class="items i-20">A ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-20">B ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-20">C ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-20">D ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-20">D ITEM</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="section-2">1 column</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&darr;</b> cross axis:
+                        <b class="axis-arrow">&rarr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>column</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <br />
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <div class="container c-21">
+                        <div class="items i-21">A EXAMPLE ITEM FIXED WIDTH</div>
+                        <div class="items i-21">B EXAMPLE ITEM FIXED WIDTH</div>
+                    </div>
+                    <div class="description-text">flex: <b>auto</b></div>
+                    <div class="container c-22">
+                        <div class="items i-22">
+                            A EXAMPLE ITEM WIDTH NOT DEFINED
+                        </div>
+                        <div class="items i-22">
+                            B EXAMPLE ITEM WIDTH NOT DEFINED
+                        </div>
+                    </div>
+                </div>
+                <h3>2 column</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&darr;</b> cross axis:
+                        <b class="axis-arrow">&rarr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>column</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>wrap</b></div>
+                    <br />
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <div class="container c-23">
+                        <div class="items i-23">A FIXED WIDTH</div>
+                        <div class="items i-23">B FIXED WIDTH</div>
+                        <div class="items i-23">C FIXED WIDTH</div>
+                        <div class="items i-23">D FIXED WIDTH</div>
+                        <div class="items i-23">E FIXED WIDTH</div>
+                    </div>
+                    <div class="description-text">flex: <b>auto</b></div>
+                    <div class="container c-24">
+                        <div class="items i-24">A EXAMPLE ITEM</div>
+                        <div class="items i-24">B EXAMPLE ITEM</div>
+                        <div class="items i-24">C EXAMPLE ITEM</div>
+                    </div>
+                </div>
+                <h3>3 column</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&darr;</b> cross axis:
+                        <b class="axis-arrow">&rarr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>column</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <br />
+                    <div class="description-text">
+                        justify-content: <b>end</b>
+                    </div>
+                    <div class="container c-25">
+                        <div class="items i-25">A EXAMPLE ITEM</div>
+                        <div class="items i-25">B EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>center</b>
+                    </div>
+                    <div class="container c-26">
+                        <div class="items i-26">A EXAMPLE ITEM</div>
+                        <div class="items i-26">B EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-between</b>
+                    </div>
+                    <div class="container c-27">
+                        <div class="items i-27">A EXAMPLE ITEM</div>
+                        <div class="items i-27">B EXAMPLE ITEM</div>
+                        <div class="items i-27">C EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-evenly</b>
+                    </div>
+                    <div class="container c-28">
+                        <div class="items i-28">A ITEM</div>
+                        <div class="items i-28">B ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        justify-content: <b>space-around</b>
+                    </div>
+                    <div class="container c-29">
+                        <div class="justify-space-around">
+                            <div class="items i-29">A ITEM</div>
+                        </div>
+                        <div class="justify-space-around">
+                            <div class="items i-29">B ITEM</div>
+                        </div>
+                    </div>
+                </div>
+                <h3>4 column</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&darr;</b> cross axis:
+                        <b class="axis-arrow">&rarr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>column</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>nowrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <br />
+                    <div class="description-text">
+                        align-items: <b>stretch (default)</b>
+                    </div>
+                    <div class="container c-30">
+                        <div class="items i-30">A EXAMPLE ITEM</div>
+                        <div class="items i-30">B EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-items: <b>center</b>
+                    </div>
+                    <div class="container c-31">
+                        <div class="items i-31">A EXAMPLE ITEM</div>
+                        <div class="items i-31">B EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-items: <b>start</b>
+                    </div>
+                    <div class="container c-32">
+                        <div class="items i-32">A EXAMPLE ITEM</div>
+                        <div class="items i-32">B EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">align-items: <b>end</b></div>
+                    <div class="container c-33">
+                        <div class="items i-33">A EXAMPLE ITEM</div>
+                        <div class="items i-33">B EXAMPLE ITEM</div>
+                    </div>
+                </div>
+                <h3>5 column</h3>
+                <div class="example">
+                    <div class="axis">
+                        main axis: <b class="axis-arrow">&darr;</b> cross axis:
+                        <b class="axis-arrow">&rarr;</b>
+                    </div>
+                    <div class="description-text">
+                        flex direction: <b>column</b>
+                    </div>
+                    <div class="description-text">flex wrap: <b>wrap</b></div>
+                    <div class="description-text">
+                        flex: <b>0 1 auto (default)</b>
+                    </div>
+                    <br />
+                    <div class="description-text">
+                        align-content: <b>stretch (default)</b> <br /><br />
+                        1. calculate the available area <br />
+                        2. divide by the number of lines <br />
+                        3. stretch the items
+                    </div>
+                    <div class="container c-34">
+                        <div class="items i-34">A EXAMPLE ITEM</div>
+                        <div class="items i-34">B EXAMPLE ITEM</div>
+                        <div class="items i-34">C EXAMPLE ITEM</div>
+                        <div class="items i-34">D EXAMPLE ITEM</div>
+                        <div class="items i-34">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>start</b>
+                    </div>
+                    <div class="container c-35">
+                        <div class="items i-35">A EXAMPLE ITEM</div>
+                        <div class="items i-35">B EXAMPLE ITEM</div>
+                        <div class="items i-35">C EXAMPLE ITEM</div>
+                        <div class="items i-35">D EXAMPLE ITEM</div>
+                        <div class="items i-35">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>end</b>
+                    </div>
+                    <div class="container c-36">
+                        <div class="items i-36">A EXAMPLE ITEM</div>
+                        <div class="items i-36">B EXAMPLE ITEM</div>
+                        <div class="items i-36">C EXAMPLE ITEM</div>
+                        <div class="items i-36">D EXAMPLE ITEM</div>
+                        <div class="items i-36">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>center</b>
+                    </div>
+                    <div class="container c-37">
+                        <div class="items i-37">A EXAMPLE ITEM</div>
+                        <div class="items i-37">B EXAMPLE ITEM</div>
+                        <div class="items i-37">C EXAMPLE ITEM</div>
+                        <div class="items i-37">D EXAMPLE ITEM</div>
+                        <div class="items i-37">E EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-between</b>
+                    </div>
+                    <div class="container c-38">
+                        <div class="items i-38">A EXAMPLE ITEM</div>
+                        <div class="items i-38">B EXAMPLE ITEM</div>
+                        <div class="items i-38">C EXAMPLE ITEM</div>
+                        <div class="items i-38">D EXAMPLE ITEM</div>
+                        <div class="items i-38">E EXAMPLE ITEM</div>
+                        <div class="items i-38">F EXAMPLE ITEM</div>
+                        <div class="items i-38">G EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-evenly</b>
+                    </div>
+                    <div class="container c-39">
+                        <div class="items i-39">A EXAMPLE ITEM</div>
+                        <div class="items i-39">B EXAMPLE ITEM</div>
+                        <div class="items i-39">C EXAMPLE ITEM</div>
+                        <div class="items i-39">D EXAMPLE ITEM</div>
+                        <div class="items i-39">E EXAMPLE ITEM</div>
+                        <div class="items i-39">G EXAMPLE ITEM</div>
+                    </div>
+                    <div class="description-text">
+                        align-content: <b>space-around</b>
+                    </div>
+                    <div class="container c-40">
+                        <div class="align-space-around">
+                            <div class="items i-40">A EXAMPLE ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-40">B EXAMPLE ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-40">C EXAMPLE ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-40">D EXAMPLE ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-40">E EXAMPLE ITEM</div>
+                        </div>
+                        <div class="align-space-around">
+                            <div class="items i-40">F EXAMPLE ITEM</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

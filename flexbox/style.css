@@ -96,7 +96,7 @@
 .i-18,
 .i-19,
 .i-20 {
-    width: 200px;
+    width: 150px;
 }
 
 .c-14 {
@@ -190,7 +190,7 @@
 .c-33 {
     flex-wrap: nowrap;
     width: 300px;
-    height: 150px;
+    height: 120px;
 }
 
 .c-25 {
@@ -215,7 +215,7 @@
 
 .c-29 .justify-space-around {
     background-color: rgba(255, 255, 0, 0.6);
-    height: 72px;
+    height: 57px;
 }
 
 .c-29 {
@@ -290,10 +290,10 @@
 
 .c-40 .align-space-around {
     background-color: rgba(255, 255, 0, 0.6);
-    width: 213px;
+    width: 244px;
 }
 
 .i-40 {
     width: max-content;
-    translate: 30% 0;
+    translate: 43% 0;
 }
