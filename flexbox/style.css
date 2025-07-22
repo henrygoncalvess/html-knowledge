@@ -49,13 +49,13 @@
 }
 
 .i-9 {
-    width: 50%;
+    width: max-content;
     display: inline-block;
 }
 
 .c-9 .justify-space-around {
     background-color: rgba(255, 255, 0, 0.6);
-    flex-basis: 24.6%;
+    width: 148px;
 }
 
 .c-10,
