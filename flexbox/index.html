@@ -20,6 +20,8 @@
                     <div class="description-items">FLEX ITEMS</div>
                 </div>
                 <div class="description-text">
+                    FLEX CONTAINER: <br />
+                    <br />
                     <b>wrap</b> | wrap items relative to the <b>cross</b> axis
                     <br />
                     <b>justify-content</b> | align items relative to the
@@ -31,6 +33,16 @@
                     <b>align-content</b> | align items relative to the
                     <b>cross</b> axis
                     <b>when items wrap</b>
+                    <br />
+                    <br />
+                    FLEX ITEMS: <br />
+                    <br />
+                    <b>order</b> | modify the item display order<b>
+                        (order: 0 | default)
+                    </b>
+                    <br />
+                    <b>align-self</b> | aligns the item independently relative
+                    to the cross axis
                 </div>
             </header>
             <section>
@@ -50,7 +62,7 @@
                     </div>
                     <div class="container c-1">
                         <div class="items i-1">A EXAMPLE ITEM</div>
-                        <div class="items i-1">B EXAMPLE ITEM</div>
+                        <div class="items i-1">B EXAAAAAAMPLE IIIIIITEM</div>
                     </div>
                     <div class="description-text">flex: <b>auto</b></div>
                     <div class="container c-2">
@@ -305,7 +317,9 @@
                     </div>
                     <div class="container c-21">
                         <div class="items i-21">A EXAMPLE ITEM FIXED WIDTH</div>
-                        <div class="items i-21">B EXAMPLE ITEM FIXED WIDTH</div>
+                        <div class="items i-21">
+                            B EXAAAMPLE IIITEM FIXEEED WIDTHHH
+                        </div>
                     </div>
                     <div class="description-text">flex: <b>auto</b></div>
                     <div class="container c-22">
@@ -541,6 +555,36 @@
                         <div class="align-space-around">
                             <div class="items i-40">F EXAMPLE ITEM</div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>item</h3>
+                <div class="item-example">
+                    <div class="description-text"><b>order</b></div>
+                    <div class="container c-i-1">
+                        <div class="flex-items f-i-1" style="order: 5">
+                            A ORDER: 5
+                        </div>
+                        <div class="flex-items f-i-1" style="order: 3">
+                            B ORDER: 3
+                        </div>
+                        <div class="flex-items f-i-1" style="order: 1">
+                            C ORDER: 1
+                        </div>
+                        <div class="flex-items f-i-1" style="order: 2">
+                            D ORDER: 2
+                        </div>
+                    </div>
+
+                    <div class="description-text"><b>align-self</b></div>
+                    <div class="container c-i-2">
+                        <div class="flex-items i-auto">AUTO</div>
+                        <div class="flex-items i-start">START</div>
+                        <div class="flex-items i-end">END</div>
+                        <div class="flex-items i-center">CENTER</div>
+                        <div class="flex-items i-stretch">STRETCH</div>
                     </div>
                 </div>
             </section>
