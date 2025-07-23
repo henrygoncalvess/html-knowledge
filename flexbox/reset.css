@@ -41,8 +41,9 @@ header {
 
 .description-items,
 .items {
-    padding: 3px 8px;
-    margin: 5px 3px;
+    padding: 1px 5px;
+    margin: 2px;
+    border-radius: 3px;
     background-color: lightblue;
     border: 1px solid black;
 }
