@@ -10,29 +10,291 @@
     <body>
         <main>
             <header>
-                <div class="header-example">
+                <div class="header-background">
                     <p>GRID CONTAINER</p>
-                    <div class="header-items">GRID ITEMS</div>
-                    <div class="header-items">GRID ITEMS</div>
-                    <div class="header-items">GRID ITEMS</div>
-                    <div class="header-items">GRID ITEMS</div>
-                    <div class="header-items">GRID ITEMS</div>
-                    <div class="header-items">GRID ITEMS</div>
+                    <div class="header-container">
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-items">GRID ITEMS</div>
+                    </div>
                 </div>
-                <div class="text-desc">grid</div>
+                <div class="text-desc">
+                    <b>grid-template-(column/row)</b> | defines how many
+                    columns/rows <br />
+                    there will be in the grid and the size of each one
+                    <br /><br />
+                    <b>gap</b> | defines the <b>space</b> between grid rows and
+                    columns <br /><br />
+                    <b>align-(items/content) &varr;</b> | aligns items/content
+                    relative to the <b>vertical</b>
+                    axis
+                    <br /><br />
+                    <b>justify-(items/content) &larr;&rarr;</b> | justify
+                    items/content relative to the <b>horizontal</b>
+                    axis
+                </div>
             </header>
             <section>
-                <h3>1</h3>
+                <h3>
+                    1: grid-template column/row
+                    <br />
+                    and
+                    <br />
+                    align items/content
+                </h3>
                 <div class="example-container">
-                    <div class="text-desc">grid</div>
-                    <div class="c">
-                        <div class="i">A</div>
-                        <div class="i">B</div>
-                        <div class="i">C</div>
-                        <div class="i">D</div>
-                        <div class="i">E</div>
-                        <div class="i">F</div>
-                        <div class="i">G</div>
+                    <div class="text-desc">
+                        grid-template-column: <b>auto auto auto auto</b>
+                        <br />
+                        grid-template-row: <b>50px 50px</b>
+                        <br />
+                        align-items: <b>&varr; stretch (default)</b> <br />
+                        align-content: <b>&varr; start (default)</b>
+                    </div>
+                    <div class="c g1">
+                        <div class="i i1">A</div>
+                        <div class="i i1">B</div>
+                        <div class="i i1">C</div>
+                        <div class="i i1">D</div>
+                        <div class="i i1">E</div>
+                        <div class="i i1">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-items: <b>&varr; start</b>
+                    </div>
+                    <div class="c g2">
+                        <div class="i i2">A</div>
+                        <div class="i i2">B</div>
+                        <div class="i i2">C</div>
+                        <div class="i i2">D</div>
+                        <div class="i i2">E</div>
+                        <div class="i i2">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-items: <b>&varr; center</b>
+                    </div>
+                    <div class="c g3">
+                        <div class="i i3">A</div>
+                        <div class="i i3">B</div>
+                        <div class="i i3">C</div>
+                        <div class="i i3">D</div>
+                        <div class="i i3">E</div>
+                        <div class="i i3">F</div>
+                    </div>
+
+                    <div class="text-desc">align-items: <b>&varr; end</b></div>
+                    <div class="c g4">
+                        <div class="i i4">A</div>
+                        <div class="i i4">B</div>
+                        <div class="i i4">C</div>
+                        <div class="i i4">D</div>
+                        <div class="i i4">E</div>
+                        <div class="i i4">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; center</b>
+                    </div>
+                    <div class="c g5">
+                        <div class="i i5">A</div>
+                        <div class="i i5">B</div>
+                        <div class="i i5">C</div>
+                        <div class="i i5">D</div>
+                        <div class="i i5">E</div>
+                        <div class="i i5">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; end</b>
+                    </div>
+                    <div class="c g6">
+                        <div class="i i6">A</div>
+                        <div class="i i6">B</div>
+                        <div class="i i6">C</div>
+                        <div class="i i6">D</div>
+                        <div class="i i6">E</div>
+                        <div class="i i6">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; space-between</b>
+                    </div>
+                    <div class="c g7">
+                        <div class="i i7">A</div>
+                        <div class="i i7">B</div>
+                        <div class="i i7">C</div>
+                        <div class="i i7">D</div>
+                        <div class="i i7">E</div>
+                        <div class="i i7">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; space-evenly</b>
+                    </div>
+                    <div class="c g8">
+                        <div class="i i8">A</div>
+                        <div class="i i8">B</div>
+                        <div class="i i8">C</div>
+                        <div class="i i8">D</div>
+                        <div class="i i8">E</div>
+                        <div class="i i8">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; space-around</b>
+                    </div>
+                    <div class="c g9">
+                        <div class="align-around-9">
+                            <div class="i i9">A</div>
+                        </div>
+                        <div class="align-around-9">
+                            <div class="i i9">B</div>
+                        </div>
+                        <div class="align-around-9">
+                            <div class="i i9">C</div>
+                        </div>
+                        <div class="align-around-9">
+                            <div class="i i9">D</div>
+                        </div>
+                        <div class="align-around-9">
+                            <div class="i i9">E</div>
+                        </div>
+                        <div class="align-around-9">
+                            <div class="i i9">F</div>
+                        </div>
+                    </div>
+
+                    <div class="text-desc">
+                        align-content: <b>&varr; strech</b>
+                        <br />
+                        <i
+                            >when <b>grid-template-row</b> is set to:
+                            <b>auto</b></i
+                        >
+                    </div>
+                    <div class="c g10">
+                        <div class="i i10">A</div>
+                        <div class="i i10">B</div>
+                        <div class="i i10">C</div>
+                        <div class="i i10">D</div>
+                        <div class="i i10">E</div>
+                        <div class="i i10">F</div>
+                    </div>
+                </div>
+
+                <h3>
+                    2: grid-template column/row
+                    <br />
+                    and
+                    <br />
+                    justify items/content
+                </h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        grid-template-column: <b>80px 80px 80px 80px;</b>
+                        <br />
+                        grid-template-row: <b>auto auto</b>
+                        <br />
+                        justify-items: <b>&larr;&rarr; stretch (default)</b>
+                        <br />
+                        justify-content: <b>&larr;&rarr; start (default)</b>
+                    </div>
+                    <div class="c g11">
+                        <div class="i i11">A</div>
+                        <div class="i i11">B</div>
+                        <div class="i i11">C</div>
+                        <div class="i i11">D</div>
+                        <div class="i i11">E</div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; center</b>
+                    </div>
+                    <div class="c g12">
+                        <div class="i i12">A</div>
+                        <div class="i i12">B</div>
+                        <div class="i i12">C</div>
+                        <div class="i i12">D</div>
+                        <div class="i i12">E</div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; end</b>
+                    </div>
+                    <div class="c g13">
+                        <div class="i i13">A</div>
+                        <div class="i i13">B</div>
+                        <div class="i i13">C</div>
+                        <div class="i i13">D</div>
+                        <div class="i i13">E</div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; space-between</b>
+                    </div>
+                    <div class="c g14">
+                        <div class="i i14">A</div>
+                        <div class="i i14">B</div>
+                        <div class="i i14">C</div>
+                        <div class="i i14">D</div>
+                        <div class="i i14">E</div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; space-evenly</b>
+                    </div>
+                    <div class="c g15">
+                        <div class="i i15">A</div>
+                        <div class="i i15">B</div>
+                        <div class="i i15">C</div>
+                        <div class="i i15">D</div>
+                        <div class="i i15">E</div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; space-around</b>
+                    </div>
+                    <div class="c g16">
+                        <div class="justify-around-16" style="order: 0">
+                            <div class="i i16">A</div>
+                        </div>
+                        <div class="justify-around-16" style="order: 2">
+                            <div class="i i16">B</div>
+                        </div>
+                        <div class="justify-around-16" style="order: 4">
+                            <div class="i i16">C</div>
+                        </div>
+                        <div class="justify-around-16" style="order: 1">
+                            <div class="i i16">D</div>
+                        </div>
+                        <div class="justify-around-16" style="order: 3">
+                            <div class="i i16">E</div>
+                        </div>
+                    </div>
+
+                    <div class="text-desc">
+                        justify-content: <b>&larr;&rarr; strech</b>
+                        <br />
+                        <i
+                            >when <b>grid-template-column</b> is set to:
+                            <b>auto</b></i
+                        >
+                    </div>
+                    <div class="c g17">
+                        <div class="i i17">A</div>
+                        <div class="i i17">B</div>
+                        <div class="i i17">C</div>
+                        <div class="i i17">D</div>
+                        <div class="i i17">E</div>
+                        <div class="i i17">F</div>
                     </div>
                 </div>
             </section>
