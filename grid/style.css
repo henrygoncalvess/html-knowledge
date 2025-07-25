@@ -96,11 +96,6 @@
     grid-template-rows: 50px 50px;
 }
 
-.g17 {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 50px 50px;
-}
-
 .g11 {
     justify-items: stretch;
     justify-content: start;
@@ -140,4 +135,74 @@
     width: 64px;
     height: 44px;
     translate: 52% 0;
+}
+
+.g17 {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px;
+}
+
+.g18,
+.g19,
+.g20,
+.g21,
+.g22 {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(2, 50px);
+}
+
+.g18 {
+    justify-content: center;
+}
+
+.g19 {
+    justify-content: center;
+    grid-auto-rows: 50px;
+}
+
+.g20 {
+    height: 120px;
+    align-items: stretch;
+    justify-items: start;
+    align-content: end;
+    justify-content: space-between;
+}
+
+.g21 {
+    height: 120px;
+    place-items: stretch start;
+    place-content: end space-between;
+}
+
+.g23 {
+    grid-template: repeat(2, 50px) / repeat(3, 80px);
+}
+
+.g24 {
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
+}
+
+.g25 {
+    grid-template: repeat(2, 50px) / repeat(3, 1fr) 2fr;
+}
+
+.g26 {
+    grid-template: repeat(2, 50px) / 90px 30% 1fr 1fr;
+}
+
+.g27 {
+    height: 150px;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.a27A {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.a27B {
+    grid-area: 1 / -2 / -1 / -1;
+}
+
+.a27C {
+    grid-area: 2 / 1 / -1 / -2;
 }

@@ -13,22 +13,27 @@
                 <div class="header-background">
                     <p>GRID CONTAINER</p>
                     <div class="header-container">
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
-                        <div class="header-items">GRID ITEMS</div>
+                        <div class="header-box b1">GRID ITEMS</div>
+                        <div class="header-box b2">GRID ITEMS</div>
+                        <div class="header-box b3">GRID ITEMS</div>
+                        <div class="header-box b4">GRID ITEMS</div>
+                        <div class="header-box b5">GRID ITEMS</div>
+                        <div class="header-box b6">GRID ITEMS</div>
+                        <div class="header-box b7">GRID ITEMS</div>
+                        <div class="header-box b8">GRID ITEMS</div>
                     </div>
                 </div>
                 <div class="text-desc">
+                    GRID CONTAINER:
+                    <br /><br />
                     <b>grid-template-(column/row)</b> | defines how many
                     columns/rows <br />
-                    there will be in the grid and the size of each one
-                    <br /><br />
+                    there will be in the <b>implicit grid</b> and the size of
+                    each one <br /><br />
+                    <b>grid-auto-(column/row)</b> | defines how many
+                    columns/rows <br />
+                    there will be in the <b>explicit grid</b> and the size of
+                    each one <br /><br />
                     <b>gap</b> | defines the <b>space</b> between grid rows and
                     columns <br /><br />
                     <b>align-(items/content) &varr;</b> | aligns items/content
@@ -38,6 +43,12 @@
                     <b>justify-(items/content) &larr;&rarr;</b> | justify
                     items/content relative to the <b>horizontal</b>
                     axis
+                    <br /><br />
+                    GRID ITEMS:
+                    <br /><br />
+                    <b>grid-row-(start/end) && grid-column-(start/end)</b>
+                    <br />
+                    defines the <b>start/end area</b> of a grid item
                 </div>
             </header>
             <section>
@@ -199,9 +210,9 @@
                 </h3>
                 <div class="example-container">
                     <div class="text-desc">
-                        grid-template-column: <b>80px 80px 80px 80px;</b>
+                        grid-template-column: <b>80px 80px 80px</b>
                         <br />
-                        grid-template-row: <b>auto auto</b>
+                        grid-template-row: <b>50px 50px</b>
                         <br />
                         justify-items: <b>&larr;&rarr; stretch (default)</b>
                         <br />
@@ -295,6 +306,185 @@
                         <div class="i i17">D</div>
                         <div class="i i17">E</div>
                         <div class="i i17">F</div>
+                    </div>
+                </div>
+
+                <h3>3: grid-auto column/row</h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        grid-template-column: <b>80px 80px 80px</b>
+                        <br />
+                        grid-template-row: <b>50px 50px</b>
+                    </div>
+                    <div class="c g18">
+                        <div class="i i18">A</div>
+                        <div class="i i18">B</div>
+                        <div class="i i18">C</div>
+                        <div class="i i18">D</div>
+                        <div class="i i18">E</div>
+                        <div class="i i18">F</div>
+                        <div class="i i18">G</div>
+                    </div>
+
+                    <div class="text-desc">
+                        grid-template-column: <b>80px 80px 80px</b>
+                        <br />
+                        grid-template-row: <b>50px 50px</b>
+                        <br />
+                        grid-auto-rows: <b>50px 50px</b>
+                    </div>
+                    <div class="c g19">
+                        <div class="i i19">A</div>
+                        <div class="i i19">B</div>
+                        <div class="i i19">C</div>
+                        <div class="i i19">D</div>
+                        <div class="i i19">E</div>
+                        <div class="i i19">F</div>
+                        <div class="i i19">G</div>
+                    </div>
+                </div>
+
+                <h3>4: shorthand to align</h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        align-items: <b>&varr; stretch</b>
+                        <br />
+                        justify-items: <b>&varr; center</b>
+                        <br />
+                        align-content: <b>&larr;&rarr; start</b>
+                        <br />
+                        justify-content: <b>&larr;&rarr; end</b>
+                    </div>
+                    <div class="c g20">
+                        <div class="i i20">A</div>
+                        <div class="i i20">B</div>
+                        <div class="i i20">C</div>
+                        <div class="i i20">D</div>
+                        <div class="i i20">E</div>
+                        <div class="i i20">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        place-items: <b>&varr; stretch center</b>
+                        <br />
+                        place-content: <b>&larr;&rarr; start end</b>
+                    </div>
+                    <div class="c g21">
+                        <div class="i i21">A</div>
+                        <div class="i i21">B</div>
+                        <div class="i i21">C</div>
+                        <div class="i i21">D</div>
+                        <div class="i i21">E</div>
+                        <div class="i i21">F</div>
+                    </div>
+                </div>
+
+                <h3>4: shorthand to grid-template + function repeat()</h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        grid-template-columns: <b>repeat(3, 80px)</b>
+                        <br />
+                        grid-template-rows: <b>repeat(2, 50px)</b>
+                    </div>
+                    <div class="c g22">
+                        <div class="i i22">A</div>
+                        <div class="i i22">B</div>
+                        <div class="i i22">C</div>
+                        <div class="i i22">D</div>
+                        <div class="i i22">E</div>
+                        <div class="i i22">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        grid-template: <b>repeat(2, 50px) / repeat(3, 80px)</b>
+                        <br />
+                        <i>* rows first</i>
+                    </div>
+                    <div class="c g23">
+                        <div class="i i23">A</div>
+                        <div class="i i23">B</div>
+                        <div class="i i23">C</div>
+                        <div class="i i23">D</div>
+                        <div class="i i23">E</div>
+                        <div class="i i23">F</div>
+                    </div>
+                </div>
+
+                <h3>5: measures and fraction (fr)</h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        grid-template: <b>repeat(2, 50px) / repeat(3, 1fr)</b>
+                    </div>
+                    <div class="c g24">
+                        <div class="i i24">A</div>
+                        <div class="i i24">B</div>
+                        <div class="i i24">C</div>
+                        <div class="i i24">D</div>
+                        <div class="i i24">E</div>
+                        <div class="i i24">F</div>
+                    </div>
+
+                    <div class="text-desc">
+                        grid-template:
+                        <b>repeat(2, 50px) / repeat(3, 1fr) 2fr</b>
+                        <br />
+                        total container: <b>500px</b>
+                    </div>
+                    <div class="c g25">
+                        <div class="i i25">A 94.4px</div>
+                        <div class="i i25">B 94.4px</div>
+                        <div class="i i25">C 94.4px</div>
+                        <div class="i i25">D 192.8px</div>
+                        <div class="i i25">E 94.4px</div>
+                        <div class="i i25">F 94.4px</div>
+                    </div>
+
+                    <div class="text-desc">
+                        grid-template: <b>repeat(2, 50px) / 90px 30% 1fr 1fr</b>
+                        <br />
+                        total container: <b>500px</b>
+                        <br />
+                        <ol>
+                            <li>90px</li>
+                            <br />
+                            <li>30% of 500px -> 150px</li>
+                            <br />
+                            <li>
+                                column 3 and 4:
+                                <br />
+                                500px - 90px - 150px = 260px
+                                <br />
+                                1fr + 1fr = 260px / 2
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="c g26">
+                        <div class="i i26">A<br />90px</div>
+                        <div class="i i26">B<br />150px</div>
+                        <div class="i i26">C (1fr)<br />130px</div>
+                        <div class="i i26">D (1fr)<br />130px</div>
+                        <div class="i i26">E<br />90px</div>
+                        <div class="i i26">F<br />150px</div>
+                    </div>
+                </div>
+
+                <h3>6: grid area</h3>
+                <div class="example-container">
+                    <div class="text-desc">
+                        grid-template: <b>repeat(3, 1fr) / repeat(3, 1fr)</b>
+                        <br /><br />
+                        <b>shorthand grid area:</b> <br />
+                        (row start) / (column start) / (row end) / (column end)
+                        <br /><br />
+                        <b>grid area:</b>
+                    </div>
+                    <div class="c g27">
+                        <div class="i i27 a27A">A: &nbsp; 1 / 1 / 2 / 3</div>
+                        <div class="i i27 a27B">
+                            B: <br />
+                            1 / -2 / -1 / -1
+                        </div>
+                        <div class="i i27 a27C">C: &nbsp; 2 / 1 / -1 / -2</div>
                     </div>
                 </div>
             </section>
